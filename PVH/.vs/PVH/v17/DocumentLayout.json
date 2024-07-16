@@ -1,122 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Code\\PVH\\PVH\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{11F652C8-244E-4D06-BFED-DCD422148CAD}|PVH\\PVH.esproj|c:\\code\\pvh\\pvh\\pvh\\views\\error.pug||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{11F652C8-244E-4D06-BFED-DCD422148CAD}|PVH\\PVH.esproj|solutionrelative:pvh\\views\\error.pug||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11F652C8-244E-4D06-BFED-DCD422148CAD}|PVH\\PVH.esproj|c:\\code\\pvh\\pvh\\pvh\\views\\index.pug||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{11F652C8-244E-4D06-BFED-DCD422148CAD}|PVH\\PVH.esproj|solutionrelative:pvh\\views\\index.pug||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11F652C8-244E-4D06-BFED-DCD422148CAD}|PVH\\PVH.esproj|c:\\code\\pvh\\pvh\\pvh\\views\\layout.pug||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{11F652C8-244E-4D06-BFED-DCD422148CAD}|PVH\\PVH.esproj|solutionrelative:pvh\\views\\layout.pug||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11F652C8-244E-4D06-BFED-DCD422148CAD}|PVH\\PVH.esproj|c:\\code\\pvh\\pvh\\pvh\\routes\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{11F652C8-244E-4D06-BFED-DCD422148CAD}|PVH\\PVH.esproj|solutionrelative:pvh\\routes\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11F652C8-244E-4D06-BFED-DCD422148CAD}|PVH\\PVH.esproj|c:\\code\\pvh\\pvh\\pvh\\routes\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{11F652C8-244E-4D06-BFED-DCD422148CAD}|PVH\\PVH.esproj|solutionrelative:pvh\\routes\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11F652C8-244E-4D06-BFED-DCD422148CAD}|PVH\\PVH.esproj|c:\\code\\pvh\\pvh\\pvh\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{11F652C8-244E-4D06-BFED-DCD422148CAD}|PVH\\PVH.esproj|solutionrelative:pvh\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "layout.pug",
-              "DocumentMoniker": "C:\\Code\\PVH\\PVH\\PVH\\views\\layout.pug",
-              "RelativeDocumentMoniker": "PVH\\views\\layout.pug",
-              "ToolTip": "C:\\Code\\PVH\\PVH\\PVH\\views\\layout.pug",
-              "RelativeToolTip": "PVH\\views\\layout.pug",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2024-07-11T17:12:38.79Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "index.pug",
-              "DocumentMoniker": "C:\\Code\\PVH\\PVH\\PVH\\views\\index.pug",
-              "RelativeDocumentMoniker": "PVH\\views\\index.pug",
-              "ToolTip": "C:\\Code\\PVH\\PVH\\PVH\\views\\index.pug",
-              "RelativeToolTip": "PVH\\views\\index.pug",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2024-07-11T17:12:33.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "error.pug",
-              "DocumentMoniker": "C:\\Code\\PVH\\PVH\\PVH\\views\\error.pug",
-              "RelativeDocumentMoniker": "PVH\\views\\error.pug",
-              "ToolTip": "C:\\Code\\PVH\\PVH\\PVH\\views\\error.pug",
-              "RelativeToolTip": "PVH\\views\\error.pug",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2024-07-11T17:12:30.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "index.js",
-              "DocumentMoniker": "C:\\Code\\PVH\\PVH\\PVH\\routes\\index.js",
-              "RelativeDocumentMoniker": "PVH\\routes\\index.js",
-              "ToolTip": "C:\\Code\\PVH\\PVH\\PVH\\routes\\index.js",
-              "RelativeToolTip": "PVH\\routes\\index.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-11T17:12:20.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "users.js",
-              "DocumentMoniker": "C:\\Code\\PVH\\PVH\\PVH\\routes\\users.js",
-              "RelativeDocumentMoniker": "PVH\\routes\\users.js",
-              "ToolTip": "C:\\Code\\PVH\\PVH\\PVH\\routes\\users.js",
-              "RelativeToolTip": "PVH\\routes\\users.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-11T17:12:11.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "app.js",
-              "DocumentMoniker": "C:\\Code\\PVH\\PVH\\PVH\\app.js",
-              "RelativeDocumentMoniker": "PVH\\app.js",
-              "ToolTip": "C:\\Code\\PVH\\PVH\\PVH\\app.js",
-              "RelativeToolTip": "PVH\\app.js",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-11T17:12:00.36Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
