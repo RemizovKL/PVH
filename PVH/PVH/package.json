@@ -4,11 +4,22 @@
   "description": "PVH",
   "main": "app.js",
   "author": {
-    "name": ""
+    "name": "Kirill Remizov and Alecsand Kaur"
   },
   "devDependencies": {
     "eslint": "^8.21.0"
   },
-  "eslintConfig": {
+  "eslintConfig": {},
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.5.3",
+    "morgan": "^1.10.0"
+  },
+  "engines": {
+    "node": "20.15.0"
   }
 }

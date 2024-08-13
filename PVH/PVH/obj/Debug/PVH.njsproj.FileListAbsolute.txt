@@ -1,0 +1,3 @@
+C:\Code\PVH\PVH\PVH\obj\Debug\PVH.njsproj.AssemblyReference.cache
+C:\Code\PVH\PVH\PVH\obj\Debug\PVH.njsproj.CoreCompileInputs.cache
+C:\Code\PVH\PVH\PVH\bin\Microsoft.NodejsTools.WebRole.dll
