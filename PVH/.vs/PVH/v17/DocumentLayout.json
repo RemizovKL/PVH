@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Code\\PVH\\PVH\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F6F4FD24-9343-483B-A172-BF4E4C822CE8}|PVH\\PVH.njsproj|C:\\Code\\PVH\\PVH\\PVH\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F6F4FD24-9343-483B-A172-BF4E4C822CE8}|PVH\\PVH.njsproj|solutionrelative:PVH\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "app.js",
+              "DocumentMoniker": "C:\\Code\\PVH\\PVH\\PVH\\app.js",
+              "RelativeDocumentMoniker": "PVH\\app.js",
+              "ToolTip": "C:\\Code\\PVH\\PVH\\PVH\\app.js",
+              "RelativeToolTip": "PVH\\app.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-13T19:23:43.439Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
