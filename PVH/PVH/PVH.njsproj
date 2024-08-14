@@ -28,14 +28,25 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include=".env" />
     <Content Include="app.js" />
+    <Content Include="controllers\catalog-controllers.js" />
+    <Content Include="helpers\createPath.js" />
+    <Content Include="helpers\handlerError.js" />
+    <Content Include="models\product.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="routs\catalog-routes.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="models\" />
+    <Folder Include="helpers\" />
+    <Folder Include="controllers\" />
+    <Folder Include="routs\" />
     <Folder Include="styles\" />
     <Folder Include="views\" />
+    <Folder Include="views\errors\" />
+    <Folder Include="views\partials\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
 </Project>

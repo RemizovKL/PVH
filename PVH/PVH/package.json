@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "PVH",
   "main": "app.js",
+  "type": "module",
   "author": {
     "name": "Kirill Remizov and Alecsand Kaur"
   },
@@ -11,7 +12,6 @@
   },
   "eslintConfig": {},
   "dependencies": {
-    "chalk": "^5.3.0",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
