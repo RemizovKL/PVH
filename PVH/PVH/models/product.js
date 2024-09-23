@@ -1,5 +1,5 @@
-import mongoose from 'mongoose'
-const Schema = Mongoose.Schema
+/*import mongoose from 'mongoose'
+const Schema = mongoose.Schema
 
 const productSchema = new Schema({
     image: {
@@ -20,4 +20,4 @@ const Product = mongoose.model('Product', productSchema)
 
 export {
     Product,
-}
+}*/

@@ -1,4 +1,4 @@
-import { Product } from '../models/product.js'
+//import { Product } from '../models/product.js'
 import { createPath, createErrorPath } from '../helpers/createPath.js'
 import { handlerEror } from '../helpers/handlerError.js'
 
