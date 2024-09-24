@@ -3,20 +3,22 @@ import express from 'express'
 import methodOverride from 'method-override'
 import mongoose from 'mongoose'
 import morgan from 'morgan'
+import 'dotenv/config'
 import { createPath, createErrorPath } from './helpers/createPath.js'
 import { router as catalogRouter } from './routs/catalog-routes.js'
 
 const app = express()
 const PORT = 3000
+const DB = ""
 
 app.set('view engine', 'ejs')
 
-/*mongoose
+mongoose
     .connect(process.env.MONGO_URL)
     .then(res => console.log('Connected to PVH MONGO_DB'))
-    .catch((err) => console.log(err))*/
+    .catch((err) => console.log(err))
 
-app.listen(PORT, (err) => {
+app.listen(process.env.PORT, (err) => {
     err ? console.log(err) : console.log(`connected to port ${PORT}, we are online`)
 })
 
