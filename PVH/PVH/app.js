@@ -8,8 +8,6 @@ import { createPath, createErrorPath } from './helpers/createPath.js'
 import { router as catalogRouter } from './routs/catalog-routes.js'
 
 const app = express()
-const PORT = 3000
-const DB = ""
 
 app.set('view engine', 'ejs')
 
@@ -19,7 +17,7 @@ mongoose
     .catch((err) => console.log(err))
 
 app.listen(process.env.PORT, (err) => {
-    err ? console.log(err) : console.log(`connected to port ${PORT}, we are online`)
+    err ? console.log(err) : console.log(`connected to port 3000, we are online`)
 })
 
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))
