@@ -61,3 +61,27 @@ body {
 .login-box button:hover {
     background-color: #01579b; /* Darker Blue */
 }
+
+.error-message {
+    color: #ff0000; /* Red */
+    margin-top: 10px;
+}
+
+.error-box {
+    background-color: #ffffff; /* White */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.error-box h2 {
+    color: #000000; /* Black */
+    margin-bottom: 20px;
+}
+
+.error-box p {
+    color: #000000; /* Black */
+    font-size: 16px;
+}

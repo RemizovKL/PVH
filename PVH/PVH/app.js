@@ -52,11 +52,11 @@ app.get('/contacts', (req, res) => {
 
 app.use((req, res) => {
     // Обработка 404 (страница не найдена)
-    res.status(404).send('Page not found');
+    res.status(404).sendFile(createPath("not_found"));
 });
 
 // Обработка ошибок
 app.use((err, req, res, next) => {
     console.error(err.stack);
-    res.status(500).send('Something broke!');
+    res.status(500).sendFile(createPath("server_error"));
 });
