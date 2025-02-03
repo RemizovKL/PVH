@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список товаров</title>
+    <link rel="stylesheet" href="/prList.css">
+</head>
+<body>
+    <header>
+        <h1>Список товаров</h1>
+    </header>
+    <main>
+        <div class="product-list">
+            <ul>
+                <% if (products.length) { %>
+                  <% products.forEach(({ id, name, image, diskription, isPipe, isFilm }) => { %>
+                    <li>
+                      <article>
+                        <h2>
+                          <a href="/product/<%= id %>"><%= name %></a>
+                        </h2>
+                        <p><%= diskription %></p>
+                      </article>
+                    </li>
+                  <% }) %>
+                <% } %>
+              </ul>
+        </div>
+    </main>
+</body>
+</html>

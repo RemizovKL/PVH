@@ -24,7 +24,7 @@ app.listen(process.env.PORT, (err) => {
 
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms'));
 
-app.use(express.static('product_card_page'));
+//app.use(express.static('product_card_page'));
 
 app.use(express.urlencoded({ extended: false }));
 
@@ -39,7 +39,7 @@ app.use(catalogRoutes);
 
 app.get('/', (req, res) => {
     const title = 'Home Page';
-    res.sendFile(path.resolve('.', 'product_card_page', 'index.html'));
+    res.sendFile(createPath("login"));
 });
 
 app.get('/about-us', (req, res) => {
