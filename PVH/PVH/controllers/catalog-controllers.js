@@ -12,9 +12,10 @@ const getCatalog = (req, res) => { //+
 
 const getProduct = (req, res) => {
     const title = `Product: ${req.params.id}`
+    console.log(req.params.id)
     Product
         .findById(req.params.id)
-        .then((prod) => res.render(createEJSPath('prList'), { title, prod }))
+        .then((prod) => res.render(createEJSPath('prCard'), { prod }))
         .catch((error) => handlerEror(res, error))
 }
 
