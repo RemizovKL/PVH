@@ -11,15 +11,17 @@
         <h1>Создание товара</h1>
     </header>
     <main>
-        <form id="product-form", method="post">
+        <form id="product-form" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="name">Название товара:</label>
                 <input type="text" id="name" name="name" required>
             </div>
-            <!--<div class="form-group">
-                <label for="image">Изображение товара (URL):</label>
-                <input type="url" id="image" name="image" required>
-            </div> -->
+            <div>
+                <label for="imageInput">Выберите файл:</label>
+                <input type="file" id="imageInput" name="file" accept="image/*"><br><br>
+                <label for="imageUrl">Или введите ссылку на картинку:</label>
+                <input type="url" id="imageUrl" name="url" placeholder="Введите URL"><br><br>
+            </div>
             <div class="form-group">
                 <label for="description">Описание товара:</label>
                 <textarea id="description" name="description" required></textarea>
