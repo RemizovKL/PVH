@@ -1,12 +1,7 @@
 import { Product } from '../models/product.js'
 import { createPath, createEJSPath } from '../helpers/createPath.js'
 import { handlerEror } from '../helpers/handlerError.js'
-import { fileURLToPath } from 'url';
-import fetch from 'node-fetch';
-import { dirname, join } from 'path';
-import { promises as fs } from 'fs';
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+
 
 const getCatalog = (req, res) => { //+
     const title = 'Catalog'
@@ -17,11 +12,11 @@ const getCatalog = (req, res) => { //+
 }
 
 const getProduct = (req, res) => {
+    console.log(`Product ID: ${req.params.id}`);
     const title = `Product: ${req.params.id}`
-    console.log(req.params.id)
     Product
         .findById(req.params.id)
-        .then((prod) => res.render(createEJSPath('prCard'), { prod }))
+        .then((prod) => {res.render(createEJSPath('prCard'), { title, prod })})
         .catch((error) => handlerEror(res, error))
 }
 
@@ -32,31 +27,21 @@ const getAddProduct = (req, res) => { // +
 
 const postAddProduct = async(req, res) => { // +
     let { name, description, isPipe, isFilm } = req.body
-    if (isPipe == "on") {
-        isPipe = true
-    }
-    let imagePath = '';
-
-    if (req.file) {
-        // Если пользователь выбрал файл
-        imagePath = join(__dirname, 'product_images', req.file.filename);
-    } else if (req.body.url) {
-        // Если пользователь ввел URL
-        const url = req.body.url;
-        const response = await fetch(url);
-        if (response.ok) {
-            const buffer = await response.buffer();
-            imagePath = path.join(__dirname, 'product_images', 'downloaded_image.jpg');
-            fs.writeFileSync(imagePath, buffer);
-        }
-    }
-
-    if (imagePath) {
-        console.log(`Изображение успешно загружено и сохранено как ${imagePath}`);
+    if (isPipe == 'on'){
+        isPipe = true;
     } else {
-        console.log('Не удалось загрузить файл или URL.');
+        isPipe = false;
     }
-    const product = new Product({ name, imagePath, description, isPipe, isFilm })
+    if (isFilm == 'on'){
+        isFilm = true;
+    } else {
+        isFilm = false;
+    }
+    const product = new Product({ name, 
+        imagePath: req.file.filename, 
+        description, 
+        isPipe, 
+        isFilm })
     product
         .save()
         .then((result) => res.redirect('/catalog'))

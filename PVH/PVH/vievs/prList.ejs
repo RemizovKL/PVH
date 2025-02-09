@@ -14,13 +14,14 @@
         <div class="product-list">
             <ul>
                 <% if (products.length) { %>
-                  <% products.forEach(({ id, name, image, diskription, isPipe, isFilm }) => { %>
+                  <% products.forEach(({ id, name, imagePath, diskription }) => { %>
                     <li>
                       <article>
+                        <img src="<%= imagePath %>">
                         <h2>
                           <a href="/catalog/<%= id %>"><%= name %></a>
                         </h2>
-                        <p><%= diskription %></p>
+                        <h1><%=  diskription %></h1>
                       </article>
                     </li>
                   <% }) %>

@@ -33,6 +33,8 @@ app.use(methodOverride('_method'));
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.static('vievs')); // Для статических файлов
+app.use(express.static('styles'));
+app.use(express.static('product_images'))
 
 app.use(authRoutes);
 app.use(catalogRoutes);
