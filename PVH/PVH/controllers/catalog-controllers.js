@@ -1,6 +1,7 @@
 import { Product } from '../models/product.js'
 import { createPath, createEJSPath } from '../helpers/createPath.js'
 import { handlerEror } from '../helpers/handlerError.js'
+import fs from "fs"
 
 
 const getCatalog = (req, res) => { //+
@@ -59,17 +60,42 @@ const getEditProduct = (req, res) => {
     const title = 'Edit Posts'
     Product
         .findById(req.params.id)
-        .then(product => res.render(createPath('edit-product'), { title, product }))
+        .then(product => res.render(createEJSPath('editProduct'), { title, product }))
         .catch((err) => handlerEror(res, err))
 }
 
 const putEditProduct = (req, res) => {
-    const { image, diskription, cost } = req.body
+    let { name, description, isPipe, isFilm} = req.body
     const id = req.params.id
+    let imagePath = " "
+
+    if(req.file) {
+        imagePath = req.file.filename;
+        fs.unlink("./product_images/" + req.body.old_image, (err) => {
+            if (err) { 
+                console.log(err)
+            } else {
+                console.log("File Deleted")
+            }
+        })
+    } else {
+        imagePath = req.body.old_image
+    }
+
+    if (isPipe == 'on'){
+        isPipe = true;
+    } else {
+        isPipe = false;
+    }
+    if (isFilm == 'on'){
+        isFilm = true;
+    } else {
+        isFilm = false;
+    }
     Product
-        .findByIdAndUpdate(id, { image, diskription, cost })
+        .findByIdAndUpdate(id, { name, imagePath, description, isPipe, isFilm })
         .then(result => res.redirect('/catalog'))
-        .catch((err) => handlerEror(res, err))
+        .catch((err) => console.log(err))
 }
 
 export {

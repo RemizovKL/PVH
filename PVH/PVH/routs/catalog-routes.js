@@ -20,6 +20,6 @@ router.get('/add-product', getAddProduct)
 router.post('/add-product', upload, postAddProduct)
 router.delete('/catalog/:id', deleteProduct)
 router.get('/edit-product/:id', getEditProduct)
-router.put('/edit-product/:id', putEditProduct)
+router.post('/edit-product/:id', upload, putEditProduct)
 
 export default router
